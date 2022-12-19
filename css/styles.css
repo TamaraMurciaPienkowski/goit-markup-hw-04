@@ -6,6 +6,8 @@
   --logo-anterior: #2196f3;
   --logo-posterior: #000000;
   --logo-posteriorprim: #ffffff;
+  --background-grey: #f5f4fa;
+  --icons-fill: #afb1b8;
 }
 
 * {
@@ -15,7 +17,7 @@
 
 body {
   color: var(--title-text);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   width: 1600px;
 }
@@ -29,6 +31,7 @@ body {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
+  padding-left: 215px;
 }
 .top a {
   text-decoration: none;
@@ -41,7 +44,7 @@ body {
 .logo-anterior {
   color: var(--logo-anterior);
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1738;
@@ -52,7 +55,7 @@ body {
 .logo-posterior {
   color: var(--logo-posterior);
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1738;
@@ -92,10 +95,12 @@ body {
 }
 
 .contact {
+  display: flex;
+  padding-right: 227px;
   padding-top: 8px;
   padding-bottom: 7px;
-  align-items: flex-end;
 }
+
 .contact a {
   color: var(--description-text);
   text-decoration: none;
@@ -109,11 +114,20 @@ body {
   margin-right: 50px;
 }
 
-.contact a:hover {
+.contact-botons:hover {
   color: var(--higlight-text);
+  fill: var(--higlight-text);
 }
 
-.contact a:focus {
+.contact-botons:focus {
+  color: var(--higlight-text);
+  fill: var(--description-text);
+}
+
+.contact-botons a:hover {
+  color: var(--higlight-text);
+}
+.contact-botons a:focus {
   color: var(--higlight-text);
 }
 
@@ -173,6 +187,9 @@ body {
   margin-bottom: 94px;
 }
 
+.advantages svg {
+  background-color: var(--description-text);
+}
 .adventages h3 {
   color: var(--title-text);
   text-decoration: none;
@@ -182,6 +199,7 @@ body {
   letter-spacing: 0.03em;
   list-style-type: none;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .adventages p {
@@ -243,17 +261,13 @@ body {
   justify-content: space-between;
 }
 
-.our-team-list li {
+.our-team-list figure {
   width: 270px;
   border-right: solid #ececec 1px;
   border-bottom: solid #ececec 1px;
   border-left: solid #ececec 1px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.our-team-list figure {
   background-color: var(--background-color);
-  padding-bottom: 30px;
 }
 
 .our-team-list h3 {
@@ -281,8 +295,73 @@ body {
   text-align: center;
 }
 
+.social-media-list {
+  list-style-type: none;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-media-list svg {
+  height: 44px;
+  width: 44px;
+  fill: var(--icons-fill);
+  padding: 12px;
+}
+
+.social-media-list svg:hover {
+  fill: var(--logo-posteriorprim);
+  background-color: var(--higlight-text);
+  border-radius: 50%;
+}
+
 /* our team end */
 
+/* our clients */
+
+.our-clients-title {
+  color: var(--title-text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin-left: 495px;
+  margin-bottom: 50px;
+}
+
+.our-clients-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.our-clients-icon {
+  fill: var(--icons-fill);
+  width: 170px;
+  height: 90px;
+  border: solid 1px var(--icons-fill);
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-top: 17.7px;
+  padding-right: 14.2px;
+  padding-bottom: 14.2px;
+}
+
+.our-clients-icon:hover {
+  fill: var(--higlight-text);
+  border-color: var(--higlight-text);
+}
+
+.our-clients-icon:focus {
+  fill: var(--higlight-text);
+  border-color: var(--higlight-text);
+}
+
+/* our clients end */
+/* front page end */
 /* portfolio */
 
 /* filters */
@@ -394,7 +473,7 @@ body {
 .logo-posterior-prim {
   color: var(--logo-posteriorprim);
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1738;
@@ -451,4 +530,18 @@ body {
 
 .container {
   width: 1200px;
+}
+
+/* icons */
+
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  border: solid 1px var(--background-grey);
+  background-color: var(--background-grey);
+  border-radius: 4%;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
 }
