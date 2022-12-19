@@ -31,18 +31,20 @@
         </ul>
       </nav>
       <aside class="contact">
-        <div class="contact-botons">
-          <svg width="16px" height="12px">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          <a class="mail" href="mailto:info@devstidio.com">info@devstudio.com</a>
-        </div>
-        <div class="contact-botons">
-          <svg width="10px" height="16px">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          <a href="tel:+48111111111">+48 111 111 111</a>
-        </div>
+        <ul class="contact-botons">
+          <li>
+            <svg width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <a class="mail" href="mailto:info@devstidio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <svg width="10px" height="16px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
       </aside>
     </header>
 
@@ -347,21 +349,48 @@
     </section>
     <!-- footer -->
     <footer class="footnote">
-      <div class="container">
-        <div class="logo-bottom">
-          <a href="index.html"
-            ><span class="logo-anterior">Web</span><span class="logo-posterior-prim">Studio</span>
-          </a>
+      <div class="container footnote-organizer">
+        <div class="bottom-left">
+          <div class="logo-bottom">
+            <a href="index.html"
+              ><span class="logo-anterior">Web</span><span class="logo-posterior-prim">Studio</span>
+            </a>
+          </div>
+          <address class="address-bottom">
+            <ul>
+              <li class="headquarters">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="mail-bottom">
+                <a href="mailto:info@devstidio.com">info@devstudio.com</a>
+              </li>
+              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            </ul>
+          </address>
         </div>
-        <address class="address-bottom">
-          <ul>
-            <li class="headquarters">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="mail-bottom">
-              <a href="mailto:info@devstidio.com">info@devstudio.com</a>
+        <div class="social-media-bottom">
+          <h3 class="social-media-bottom-title">dołącz do nas</h3>
+          <ul class="social-media-list-bottom">
+            <li>
+              <svg>
+                <use width="20px" height="20px" href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            <li>
+              <svg>
+                <use width="20px" height="20px" href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use width="20px" height="20px" href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use width="20px" height="20px" href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
     <!-- end of footer -->

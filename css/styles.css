@@ -108,18 +108,28 @@ body {
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
+  margin-left: 10px;
 }
 
-.mail {
-  margin-right: 50px;
+.phone {
+  padding-top: 1px;
+}
+.contact-botons {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
 }
 
-.contact-botons:hover {
+.contact-botons svg {
+  fill: var(--description-text);
+}
+
+.contact-botons li:hover {
   color: var(--higlight-text);
   fill: var(--higlight-text);
 }
 
-.contact-botons:focus {
+.contact-botons li:focus {
   color: var(--higlight-text);
   fill: var(--description-text);
 }
@@ -136,6 +146,7 @@ body {
 /* title section */
 .header {
   background-color: #2f303a;
+  background-image: url('../images/background.jpg');
   color: #ffffff;
 }
 
@@ -209,6 +220,18 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   list-style-type: none;
+}
+
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  border: solid 1px var(--background-grey);
+  background-color: var(--background-grey);
+  border-radius: 4%;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
 }
 
 /* adventages end */
@@ -311,13 +334,14 @@ body {
   padding: 12px;
 }
 
-.social-media-list svg:hover {
-  fill: var(--logo-posteriorprim);
+.social-media-list li:hover {
   background-color: var(--higlight-text);
   border-radius: 50%;
 }
 
-/* our team end */
+.social-media-list li:hover svg {
+  fill: var(--logo-posteriorprim);
+}
 
 /* our clients */
 
@@ -462,6 +486,14 @@ body {
   padding-bottom: 60px;
 }
 
+.footnote-organizer {
+  display: flex;
+}
+
+.bottom-left {
+  margin: 0px;
+}
+
 .logo-bottom {
   margin-bottom: 20px;
 }
@@ -521,6 +553,45 @@ body {
   color: var(--higlight-text);
 }
 
+.social-media-bottom {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.social-media-bottom-title {
+  color: var(--logo-posteriorprim);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-transform: uppercase;
+  letter-spacing: 00.03em;
+}
+.social-media-list-bottom {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-media-list-bottom li {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-media-list-bottom svg {
+  height: 44px;
+  width: 44px;
+  fill: var(--logo-posteriorprim);
+  padding: 12px;
+}
+
+.social-media-list-bottom li:hover {
+  background-color: var(--higlight-text);
+  border-radius: 50%;
+}
+
+.social-media-list-bottom li:hover svg {
+  fill: var(--logo-posteriorprim);
+}
+
 /* footer end */
 
 .section {
@@ -530,18 +601,4 @@ body {
 
 .container {
   width: 1200px;
-}
-
-/* icons */
-
-.advantages-icon {
-  width: 270px;
-  height: 120px;
-  border: solid 1px var(--background-grey);
-  background-color: var(--background-grey);
-  border-radius: 4%;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
 }
