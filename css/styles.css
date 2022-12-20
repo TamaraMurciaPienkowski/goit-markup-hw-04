@@ -39,6 +39,7 @@ body {
 
 .logo {
   margin-right: 93px;
+  cursor: pointer;
 }
 
 .logo-anterior {
@@ -50,7 +51,6 @@ body {
   line-height: 1.1738;
   letter-spacing: 0.03em;
   text-decoration: none;
-  cursor: pointer;
 }
 .logo-posterior {
   color: var(--logo-posterior);
@@ -61,7 +61,6 @@ body {
   line-height: 1.1738;
   letter-spacing: 0.03em;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .navigation {
@@ -120,25 +119,22 @@ body {
   gap: 30px;
 }
 
-.contact-botons svg {
-  fill: var(--description-text);
+.icon-and-link {
+  cursor: pointer;
 }
 
-.contact-botons li:hover {
+.icon-and-link svg {
+  fill: var(--description-text);
+}
+.icon-and-link:hover {
   color: var(--higlight-text);
   fill: var(--higlight-text);
+  background-color: pink;
 }
-
-.contact-botons li:focus {
+.icon-and-link:focus {
   color: var(--higlight-text);
-  fill: var(--description-text);
-}
-
-.contact-botons a:hover {
-  color: var(--higlight-text);
-}
-.contact-botons a:focus {
-  color: var(--higlight-text);
+  fill: var(--higlight-text);
+  background-color: pink;
 }
 
 /* header end */
