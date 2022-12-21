@@ -30,7 +30,7 @@ body {
   border-width: 1px;
   display: flex;
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 8px;
   padding-left: 215px;
 }
 .top a {
@@ -110,9 +110,10 @@ body {
   margin-left: 10px;
 }
 
-.phone {
-  padding-top: 1px;
+.contact svg {
+  vertical-align: middle;
 }
+
 .contact-botons {
   list-style-type: none;
   display: flex;
@@ -126,27 +127,31 @@ body {
 .icon-and-link svg {
   fill: var(--description-text);
 }
-.icon-and-link:hover {
+
+.icon-and-link:hover a {
   color: var(--higlight-text);
-  fill: var(--higlight-text);
-  background-color: pink;
-}
-.icon-and-link:focus {
-  color: var(--higlight-text);
-  fill: var(--higlight-text);
-  background-color: pink;
 }
 
+.icon-and-link:focus a {
+  color: var(--higlight-text);
+}
+
+.icon-and-link:hover svg {
+  fill: var(--higlight-text);
+}
+
+.icon-and-link:focus svg {
+  fill: var(--higlight-text);
+}
 /* header end */
 
 /* title section */
 .header {
   background-color: #2f303a;
-  background-image: url('../images/background.jpg');
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background.jpg');
   color: #ffffff;
+  margin-top: 0px;
 }
 
 .slogan {
@@ -444,6 +449,14 @@ body {
 .projects-list li {
   border: solid #eeeeee 1px;
   width: 370px;
+}
+
+.projects-list li:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.projects-list li:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .projects-list figure {
