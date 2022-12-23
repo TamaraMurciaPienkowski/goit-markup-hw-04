@@ -30,7 +30,7 @@ body {
   border-width: 1px;
   display: flex;
   padding-top: 24px;
-  padding-bottom: 8px;
+  padding-bottom: 24px;
   padding-left: 215px;
 }
 .top a {
@@ -333,11 +333,15 @@ body {
   padding-right: 32px;
 }
 
-.social-media-list svg {
+.social-media-list li {
+  border-radius: 50%;
   height: 44px;
   width: 44px;
+  display: grid;
+  place-items: center;
+}
+.social-media-list svg {
   fill: var(--icons-fill);
-  padding: 12px;
 }
 
 .social-media-list li:hover {
@@ -589,12 +593,13 @@ body {
 .social-media-list-bottom li {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
-.social-media-list-bottom svg {
   height: 44px;
   width: 44px;
+  display: grid;
+  place-items: center;
+}
+.social-media-list-bottom svg {
   fill: var(--logo-posteriorprim);
-  padding: 12px;
 }
 
 .social-media-list-bottom li:hover {
